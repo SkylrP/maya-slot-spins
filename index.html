@@ -16,7 +16,7 @@ button:hover{background:linear-gradient(180deg,#a08060,#6b5744)}button:active{tr
 <div class="bo" id="bo"><h2>&#9788; SUN GOD BONUS &#9788;</h2><p style="color:#d4a574">Choose a temple doorway!</p><div class="doors" id="drs"></div><p id="br" style="color:#ffd700;font-size:1.3em;margin-top:20px"></p></div>
 <div class="wm" id="wm"><h3 id="wt"></h3><p id="wtx"></p></div>
 <script>
-const S=[{s:'🐊',n:'Imix',v:5},{s:'💨',n:"Ik'",v:8},{s:'🌑',n:"Ak'bal",v:10},{s:'🌽',n:"K'an",v:15},{s:'🐍',n:"Chik'chan",v:20},{s:'💀',n:'Kimi',v:25},{s:'🦌',n:"Manik'",v:30},{s:'🐇',n:'Lamat',v:40},{s:'🌧',n:'Muluk',v:50},{s:'🐕',n:'Ok',v:60},{s:'🐒',n:'Chuwen',v:70},{s:'🧹',n:'Eb',v:80},{s:'🎋',n:'Ben',v:90},{s:'🐆',n:'Ix',v:100},{s:'🦅',n:'Men',v:120},{s:'🦃',n:'Kib',v:150},{s:'🌋',n:'Kaban',v:200},{s:'🔪',n:"Etz'nab",v:250},{s:'⛈',n:'Kawak',v:500},{s:'☀',n:'Ahau',v:1000}];
+const S=[{s:'🐊',n:'Imix',v:5},{s:'💨',n:"Ik'",v:8},{s:'🌑',n:"Ak'bal",v:10},{s:'🌽',n:"K'an",v:15},{s:'🐍',n:"Chikchn",v:20},{s:'💀',n:'Kimi',v:25},{s:'🦌',n:"Manik'",v:30},{s:'🐇',n:'Lamat',v:40},{s:'🌧',n:'Muluk',v:50},{s:'🐕',n:'Ok',v:60},{s:'🐒',n:'Chuwen',v:70},{s:'🧹',n:'Eb',v:80},{s:'🎋',n:'Ben',v:90},{s:'🐆',n:'Ix',v:100},{s:'🦅',n:'Men',v:120},{s:'🦃',n:'Kib',v:150},{s:'🌋',n:'Kaban',v:200},{s:'🔪',n:"Etz'nab",v:250},{s:'⛈',n:'Kawak',v:500},{s:'☀',n:'Ahau',v:1000}];
 const N=20,SH=68,ANG=360/N,R=(SH/2)/Math.tan(Math.PI/N);
 let cr=1000,bt=10,sp=false,ib=false;const ac=new(window.AudioContext||window.webkitAudioContext)();
 function snd(f,d,t='sine',v=.12){const o=ac.createOscillator(),g=ac.createGain();o.type=t;o.frequency.setValueAtTime(f,ac.currentTime);g.gain.setValueAtTime(v,ac.currentTime);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+d);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+d)}
